@@ -11,7 +11,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="grid  auto-rows-auto gap-2 p-1 sm:gap-3 sm:p-2 md:p-4">
-                <section className="rounded bg-night shadow-md shadow-charcoal md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h1 className="text-4xl font-bold">Patrick James McPherson</h1>
                     <h6>SOFTWARE ENGINEER</h6>
                     <small>
@@ -19,7 +19,7 @@ export default function Home() {
                         KEY DRIVING FACTORS TO MY WORK ETHIC.
                     </small>
                 </section>
-                <section className="rounded bg-night shadow-md shadow-charcoal md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <article>
                         <h2>PROJECTS</h2>
                     </article>
@@ -30,7 +30,7 @@ export default function Home() {
                         <h2>SKILLS</h2>
                     </article>
                 </section>
-                <section className="rounded bg-night py-1 shadow-md shadow-charcoal  md:mx-2 lg:px-2 xl:px-3">
+                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h2>CONTACT</h2>
                     <small>
                         Please contact me if you are looking for a new software engineer to build

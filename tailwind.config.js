@@ -6,7 +6,11 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                circuit: "url('../public/images/circuit-board.svg')",
+            },
+        },
         colors: {
             transparent: "transparent",
             emerald: "#35ce8d",
