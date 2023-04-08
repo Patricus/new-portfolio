@@ -10,8 +10,8 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="grid  auto-rows-auto gap-2 p-1 sm:gap-3 sm:p-2 md:p-4">
-                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+            <main className="grid max-w-5xl auto-rows-auto gap-2 p-1 sm:gap-3 sm:p-2 md:p-4">
+                <section className="animate-[fade-in-down_1s_forwards] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h1 className="text-4xl font-bold">Patrick James McPherson</h1>
                     <h6>SOFTWARE ENGINEER</h6>
                     <small>
@@ -19,18 +19,21 @@ export default function Home() {
                         KEY DRIVING FACTORS TO MY WORK ETHIC.
                     </small>
                 </section>
-                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+                <section className="animate-[fade-in-down_1s_forwards_500ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-150 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <article>
                         <h2>PROJECTS</h2>
+                        <div>Projects will display here</div>
                     </article>
                     <article>
                         <h2>ABOUT ME</h2>
+                        <div>About Me will display here</div>
                     </article>
                     <article>
                         <h2>SKILLS</h2>
+                        <div>Skills will display here</div>
                     </article>
                 </section>
-                <section className="rounded border-2 border-columbiaBlue border-opacity-10 bg-night shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+                <section className="animate-[fade-in-down_1s_forwards_1000ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-300 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h2>CONTACT</h2>
                     <small>
                         Please contact me if you are looking for a new software engineer to build
