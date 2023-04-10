@@ -10,6 +10,7 @@ import Python from "../public/images/skills/python.svg";
 import react from "../public/images/skills/react.svg";
 import SQL from "../public/images/skills/sql.svg";
 import TypeScript from "../public/images/skills/typescript.svg";
+import Tailwind from "../public/images/skills/tailwind.svg";
 import SkillCard from "./SkillCard";
 
 function Skills({ selected }: { selected: boolean }) {
@@ -20,6 +21,7 @@ function Skills({ selected }: { selected: boolean }) {
         TypeScript,
         Python,
         SQL,
+        Tailwind,
         React: react,
         Next,
         Nest,
