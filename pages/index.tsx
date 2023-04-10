@@ -1,7 +1,13 @@
+import AboutMe from "@/components/AboutMe";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Head from "next/head";
-import Image from "next/image";
+import { useState } from "react";
+
+type Selected = "project" | "about" | "skills" | null;
 
 export default function Home() {
+    const [selected, setSelected] = useState<Selected>(null);
     return (
         <>
             <Head>
@@ -10,7 +16,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="grid max-w-5xl auto-rows-auto gap-2 p-1 sm:gap-3 sm:p-2 md:p-4">
+            <main className="grid max-w-5xl auto-rows-auto gap-2 p-1 sm:gap-3 sm:p-2 md:p-4 lg:mx-auto">
                 <section className="animate-[fade-in-down_1s_forwards] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h1 className="text-4xl font-bold">Patrick James McPherson</h1>
                     <h6>SOFTWARE ENGINEER</h6>
@@ -21,16 +27,22 @@ export default function Home() {
                 </section>
                 <section className="animate-[fade-in-down_1s_forwards_500ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-150 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <article>
-                        <h2>PROJECTS</h2>
-                        <div>Projects will display here</div>
+                        <h2 className="cursor-pointer" onClick={() => setSelected("project")}>
+                            PROJECTS
+                        </h2>
+                        <Projects selected={selected === "project"} />
                     </article>
                     <article>
-                        <h2>ABOUT ME</h2>
-                        <div>About Me will display here</div>
+                        <h2 className="cursor-pointer" onClick={() => setSelected("about")}>
+                            ABOUT ME
+                        </h2>
+                        <AboutMe selected={selected === "about"} />
                     </article>
                     <article>
-                        <h2>SKILLS</h2>
-                        <div>Skills will display here</div>
+                        <h2 className="cursor-pointer" onClick={() => setSelected("skills")}>
+                            SKILLS
+                        </h2>
+                        <Skills selected={selected === "skills"} />
                     </article>
                 </section>
                 <section className="animate-[fade-in-down_1s_forwards_1000ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-300 md:mx-2 lg:px-2 lg:py-1 xl:px-3">

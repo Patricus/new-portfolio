@@ -7,6 +7,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            spacing: {
+                128: "32rem",
+                144: "36rem",
+            },
             backgroundImage: {
                 circuit: "url('../public/images/circuit-board.svg')",
             },
@@ -23,7 +27,7 @@ module.exports = {
                 },
             },
             animation: {
-                "fade-in-down": "fade-in-down 1s ease-out",
+                "fade-in-down": "fade-in-down 1s forwards ease-out 1s",
             },
         },
         colors: {
