@@ -1,13 +1,7 @@
-import AboutMe from "@/components/AboutMe";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import Sections from "@/components/Sections";
 import Head from "next/head";
-import { useState } from "react";
-
-type Selected = "project" | "about" | "skills" | null;
 
 export default function Home() {
-    const [selected, setSelected] = useState<Selected>(null);
     return (
         <>
             <Head>
@@ -31,44 +25,7 @@ export default function Home() {
                 {/* Projects, About Me, and Skills section */}
 
                 <section className="animate-[fade-in-down_1s_forwards_500ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-150 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
-                    {/* Projects section*/}
-
-                    <article>
-                        <h2
-                            className={`cursor-pointer text-lg ${
-                                selected === "project" && "text-emerald"
-                            }`}
-                            onClick={() => setSelected("project")}>
-                            PROJECTS
-                        </h2>
-                        <Projects selected={selected === "project"} />
-                    </article>
-
-                    {/* About me section*/}
-
-                    <article>
-                        <h2
-                            className={`cursor-pointer text-lg ${
-                                selected === "about" && "text-emerald"
-                            }`}
-                            onClick={() => setSelected("about")}>
-                            ABOUT ME
-                        </h2>
-                        <AboutMe selected={selected === "about"} />
-                    </article>
-
-                    {/* Skills section*/}
-
-                    <article>
-                        <h2
-                            className={`cursor-pointer text-lg ${
-                                selected === "skills" && "text-emerald"
-                            }`}
-                            onClick={() => setSelected("skills")}>
-                            SKILLS
-                        </h2>
-                        <Skills selected={selected === "skills"} />
-                    </article>
+                    <Sections />
                 </section>
 
                 {/* Contact section */}

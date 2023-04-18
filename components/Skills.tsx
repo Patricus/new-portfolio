@@ -13,7 +13,7 @@ import TypeScript from "../public/images/skills/typescript.svg";
 import Tailwind from "../public/images/skills/tailwind.svg";
 import SkillCard from "./SkillCard";
 
-function Skills({ selected }: { selected: boolean }) {
+function Skills() {
     const skills = {
         HTML,
         CSS,
@@ -31,9 +31,7 @@ function Skills({ selected }: { selected: boolean }) {
 
     return (
         <div
-            className={`${
-                selected ? "max-h-128" : "max-h-0"
-            } mx-auto flex w-3/4  flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
+            className={`mx-auto flex flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
             {Object.entries(skills).map(([name, image], index) => (
                 <SkillCard key={index} skill={name} image={image} />
             ))}
