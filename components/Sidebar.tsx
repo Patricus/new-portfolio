@@ -4,26 +4,29 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 
 function Sidebar({
-    selected,
-    setSelected,
+    setSection,
 }: {
-    selected: JSX.Element;
-    setSelected: React.Dispatch<React.SetStateAction<JSX.Element>>;
+    setSection: (newSection: JSX.Element) => void;
 }) {
+    const [selection, setSelection] = React.useState<string>("about");
     const handleClick = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
         const target = e.target as HTMLLIElement;
         switch (target.id) {
-            case "projects":
-                setSelected(<Projects />);
-                break;
             case "about":
-                setSelected(<AboutMe />);
+                setSelection("about");
+                setSection(<AboutMe />);
                 break;
             case "skills":
-                setSelected(<Skills />);
+                setSelection("skills");
+                setSection(<Skills />);
+                break;
+            case "projects":
+                setSelection("projects");
+                setSection(<Projects />);
                 break;
             default:
-                setSelected(<AboutMe />);
+                setSelection("about");
+                setSection(<AboutMe />);
                 break;
         }
     };
@@ -32,7 +35,7 @@ function Sidebar({
             <ul className="flex flex-col gap-1">
                 <li
                     className={`duration-250 cursor-pointer  border-b border-emerald transition-all hover:text-emerald ${
-                        selected.type.name === "AboutMe" && "font-bold text-emerald"
+                        selection === "about" && "font-bold text-emerald"
                     }`}
                     id="about"
                     onClick={handleClick}>
@@ -40,7 +43,7 @@ function Sidebar({
                 </li>
                 <li
                     className={`duration-250 cursor-pointer  border-b border-emerald transition-all hover:text-emerald ${
-                        selected.type.name === "Skills" && "font-bold text-emerald"
+                        selection === "skills" && "font-bold text-emerald"
                     }`}
                     id="skills"
                     onClick={handleClick}>
@@ -48,7 +51,7 @@ function Sidebar({
                 </li>
                 <li
                     className={`duration-250 cursor-pointer  border-b border-emerald transition-all hover:text-emerald ${
-                        selected.type.name === "Projects" && "font-bold text-emerald"
+                        selection === "projects" && "font-bold text-emerald"
                     }`}
                     id="projects"
                     onClick={handleClick}>
