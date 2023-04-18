@@ -31,7 +31,7 @@ function Skills() {
 
     return (
         <div
-            className={`mx-auto flex flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
+            className={`mx-auto flex w-11/12 flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
             {Object.entries(skills).map(([name, image], index) => (
                 <SkillCard key={index} skill={name} image={image} />
             ))}

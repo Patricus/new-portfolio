@@ -22,7 +22,7 @@ function Sections() {
                 <Sidebar setSection={changeSection} />
             </div>
             <article
-                className={`overflow-hidden transition-all ${
+                className={`overflow-hidden transition-all duration-500 ${
                     transitioning ? "max-h-0" : "max-h-144"
                 }`}>
                 {section}

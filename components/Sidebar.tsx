@@ -3,11 +3,7 @@ import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 
-function Sidebar({
-    setSection,
-}: {
-    setSection: (newSection: JSX.Element) => void;
-}) {
+function Sidebar({ setSection }: { setSection: (newSection: JSX.Element) => void }) {
     const [selection, setSelection] = React.useState<string>("about");
     const handleClick = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
         const target = e.target as HTMLLIElement;
@@ -31,7 +27,7 @@ function Sidebar({
         }
     };
     return (
-        <div>
+        <div className="sticky top-1">
             <ul className="flex flex-col gap-1">
                 <li
                     className={`duration-250 cursor-pointer  border-b border-emerald transition-all hover:text-emerald ${
