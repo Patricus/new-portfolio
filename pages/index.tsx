@@ -8,7 +8,10 @@ export default function Home() {
                 <title>Patrick McPherson</title>
                 <meta name="description" content="Patrick McPherson's Portfolio" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <main className="mx-auto grid max-w-4xl auto-rows-auto gap-2 sm:gap-3">
                 {/* Header section */}
