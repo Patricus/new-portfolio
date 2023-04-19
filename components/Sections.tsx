@@ -13,7 +13,7 @@ function Sections() {
         timer.current = setTimeout(() => {
             setTransitioning(false);
             setSection(newSection);
-        }, 500);
+        }, 1000);
     };
 
     return (
@@ -22,8 +22,8 @@ function Sections() {
                 <Sidebar setSection={changeSection} />
             </div>
             <article
-                className={`overflow-hidden transition-all duration-500 ${
-                    transitioning ? "max-h-0" : "max-h-144"
+                className={`overflow-hidden transition-all duration-1000 ${
+                    transitioning ? "max-h-0" : "max-h-[200rem]"
                 }`}>
                 {section}
             </article>

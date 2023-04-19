@@ -1,23 +1,60 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import coffeePosts from "../public/images/projects/coffeePosts.jpeg";
+import bookFace from "../public/images/projects/postFeed.png";
+import eventZeit from "../public/images/projects/events-top.png";
+import yummies from "../public/images/projects/homePage.png";
 
 function Projects() {
     const projects = [
         {
-            name: "Project 1",
+            name: "Coffee Posts",
             image: coffeePosts,
-            description: "This is a description of project 1",
+            description:
+                "A learning project to not only learn Next for my frontend, but Nest for my backend as well.",
+            frontend: "Next",
+            backend: "Nest",
+            database: "PostgreSQL",
+            liveLink: "https://coffee-post.onrender.com/",
+            repoLink: "https://github.com/Patricus/coffee-posts",
+        },
+        {
+            name: "BookFace",
+            image: bookFace,
+            description:
+                "My final capstone project from App Academy. This is the culmination of progress after 6 months.",
             frontend: "React",
             backend: "Flask",
             database: "PostgreSQL",
-            liveLink: "https://www.google.com",
-            repoLink: "https://www.google.com",
+            liveLink: "https://bookface-frwd.onrender.com/",
+            repoLink: "https://github.com/Patricus/BookFace",
+        },
+        {
+            name: "EventZeit",
+            image: eventZeit,
+            description:
+                "A group project that, built in a week. We tried to cram features in like AWS S3, Google Maps, and QR codes.",
+            frontend: "React",
+            backend: "Flask",
+            database: "PostgreSQL",
+            liveLink: "https://eventzeit.onrender.com/",
+            repoLink: "https://github.com/Patricus/Eventzeit",
+        },
+        {
+            name: "Yummies",
+            image: yummies,
+            description:
+                "This is my first project using React. This was a major learning experience for me.",
+            frontend: "React",
+            backend: "Express",
+            database: "PostgreSQL",
+            liveLink: "https://yummies.onrender.com/",
+            repoLink: "https://github.com/Patricus/yummies",
         },
     ];
     return (
         <div
-            className={`mx-auto flex w-11/12 flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
+            className={`mx-auto grid w-11/12 grid-cols-1 justify-center gap-2 overflow-hidden transition-all duration-500 md:grid-cols-2`}>
             {projects.map((project, index) => (
                 <ProjectCard {...project} key={index} />
             ))}
