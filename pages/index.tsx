@@ -101,14 +101,14 @@ export default function Home() {
 
                         {/* Links and contact info */}
 
-                        <ul className="ml-3 mt-6 grid grid-cols-2 justify-items-center gap-1 md:ml-6 md:grid-cols-1 md:justify-items-start">
+                        <ul className="mx-auto mt-6 grid grid-cols-[3fr,_2fr] justify-items-center gap-1 md:ml-6 md:grid-cols-1 md:justify-items-start">
                             <li className="underline decoration-emerald underline-offset-2">
                                 Santa Barbara, CA
                             </li>
                             <li className="underline decoration-emerald underline-offset-2">
                                 (805) 570-8845
                             </li>
-                            <li className="underline decoration-emerald underline-offset-2">
+                            <li className="text-sm font-semibold underline decoration-emerald underline-offset-2 md:text-base md:font-normal">
                                 patrick.j.mcpherson@gmail.com
                             </li>
                             <li className="underline decoration-emerald underline-offset-2">
