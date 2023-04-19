@@ -45,7 +45,13 @@ function ProjectCard({
                         target="_blank"
                         rel="noopener noreferrer">
                         <div className="relative h-6 w-6">
-                            <Image src={linkArrow} alt={`${name} repository`} fill />
+                            <Image
+                                src={linkArrow}
+                                alt={`${name} repository`}
+                                fill
+                                sizes="(max-width: 767px) 610px,
+                                355px"
+                            />
                         </div>
                         <span>LIVE SITE</span>
                     </a>

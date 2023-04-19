@@ -33,7 +33,7 @@ export default function Home() {
 
                 {/* Contact section */}
 
-                <section className="animate-[fade-in-down_1s_forwards_1000ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-300 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
+                <section className="mb-3 animate-[fade-in-down_1s_forwards_1000ms] rounded border-2 border-columbiaBlue border-opacity-10 bg-night opacity-0 shadow-md shadow-charcoal backdrop-blur-lg delay-300 md:mx-2 lg:px-2 lg:py-1 xl:px-3">
                     <h2>CONTACT</h2>
                     <small>
                         Please contact me if you are looking for a new software engineer to build
