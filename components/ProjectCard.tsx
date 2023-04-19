@@ -24,7 +24,16 @@ function ProjectCard({
     return (
         <div className="relative flex flex-col gap-1 overflow-hidden rounded-lg border-2 border-eerieBlack bg-charcoal shadow-inner shadow-eerieBlack">
             <div className="relative h-72">
-                <Image className="mb-1 place-self-center" src={image} alt={name} fill />
+                <Image
+                    className="mb-1 place-self-center"
+                    src={image}
+                    alt={name}
+                    fill
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
+                    sizes="(max-width: 767px) 610px,
+                                355px"
+                />
             </div>
             <div className="mx-1">
                 <strong className="text-lg font-bold">{name.toUpperCase()}</strong>
@@ -45,13 +54,7 @@ function ProjectCard({
                         target="_blank"
                         rel="noopener noreferrer">
                         <div className="relative h-6 w-6">
-                            <Image
-                                src={linkArrow}
-                                alt={`${name} repository`}
-                                fill
-                                sizes="(max-width: 767px) 610px,
-                                355px"
-                            />
+                            <Image src={linkArrow} alt={`${name} repository`} fill />
                         </div>
                         <span>LIVE SITE</span>
                     </a>
