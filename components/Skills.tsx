@@ -14,29 +14,44 @@ import Tailwind from "../public/images/skills/tailwind.svg";
 import SkillCard from "./SkillCard";
 
 function Skills() {
-    const skills = {
-        HTML,
-        CSS,
-        JavaScript,
-        TypeScript,
-        Python,
-        SQL,
-        Tailwind,
-        React: react,
-        Next,
-        Nest,
-        Flask,
-        PostgreSQL,
-    };
+  const languages = {
+    HTML,
+    CSS,
+    JavaScript,
+    TypeScript,
+    Python,
+    SQL,
+  };
 
-    return (
-        <div
-            className={`mx-auto flex w-11/12 flex-wrap justify-center gap-2 overflow-hidden transition-all duration-500`}>
-            {Object.entries(skills).map(([name, image], index) => (
-                <SkillCard key={index} skill={name} image={image} />
-            ))}
+  const frameworks = {
+    Tailwind,
+    React: react,
+    Next,
+    Nest,
+    Flask,
+    PostgreSQL,
+  };
+
+  return (
+    <div className={`mx-auto w-11/12 overflow-hidden transition-all duration-500`}>
+      <div className="mb-2 flex flex-col items-center">
+        <h2 className="mb-2 text-xl underline">Languages</h2>
+        <div className="flex w-10/12 flex-wrap justify-center gap-3">
+          {Object.entries(languages).map(([name, image], index) => (
+            <SkillCard key={index} skill={name} image={image} />
+          ))}
         </div>
-    );
+      </div>
+      <div className="mb-2 flex flex-col items-center">
+        <h2 className="mb-2 text-xl underline">Frameworks</h2>
+        <div className="flex w-10/12 flex-wrap justify-center gap-3">
+          {Object.entries(frameworks).map(([name, image], index) => (
+            <SkillCard key={index} skill={name} image={image} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Skills;
