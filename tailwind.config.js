@@ -11,9 +11,6 @@ module.exports = {
                 128: "32rem",
                 144: "36rem",
             },
-            backgroundImage: {
-                circuit: "url('../public/images/circuit-board.svg')",
-            },
             keyframes: {
                 "fade-in-down": {
                     "0%": {
@@ -29,14 +26,14 @@ module.exports = {
             animation: {
                 "fade-in-down": "fade-in-down 1s forwards ease-out 250ms",
             },
-        },
-        colors: {
-            transparent: "transparent",
-            emerald: "#35ce8d",
-            charcoal: "#3e505b",
-            columbiaBlue: "#c1dff0",
-            eerieBlack: "#1a1a1a",
-            night: "#03120e",
+            colors: {
+                transparent: "transparent",
+                xanthous: "#e6af2e",
+                argentinianBlue: "#63adf2",
+                uranianBlue: "#a7cced",
+                eerieBlack: "#1a1a1a",
+                airSuperiorityBlue: "#82a0bc",
+            },
         },
     },
     plugins: [],
