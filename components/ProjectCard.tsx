@@ -22,7 +22,7 @@ function ProjectCard({
     repoLink: string;
 }) {
     return (
-        <div className="relative flex flex-col gap-1 overflow-hidden rounded-lg border-2 border-eerieBlack bg-charcoal shadow-inner shadow-eerieBlack">
+        <div className="relative flex flex-col gap-1 overflow-hidden rounded-lg border-2 border-eerieBlack bg-airSuperiorityBlue shadow-inner shadow-eerieBlack">
             <div className="relative h-72">
                 <Image
                     className="mb-1 place-self-center"
@@ -49,7 +49,7 @@ function ProjectCard({
             <div className="mx-1 font-semibold">
                 <div className="w-fit">
                     <a
-                        className="flex gap-1 transition-all hover:gap-3 hover:text-emerald"
+                        className="flex gap-1 transition-all hover:gap-3 hover:text-xanthous"
                         href={liveLink}
                         target="_blank"
                         rel="noopener noreferrer">
@@ -61,7 +61,7 @@ function ProjectCard({
                 </div>
                 <div className="w-fit">
                     <a
-                        className="flex gap-1 transition-all hover:gap-3 hover:text-emerald"
+                        className="flex gap-1 transition-all hover:gap-3 hover:text-xanthous"
                         href={repoLink}
                         target="_blank"
                         rel="noopener noreferrer">
