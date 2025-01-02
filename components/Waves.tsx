@@ -5,10 +5,10 @@ import wave3 from '@/public/images/wave3.svg'
 
 export default function Waves() {
     return (
-        <div className='absolute bottom-0 left-0 w-screen h-10 -z-10'>
-            <Image src={wave1} alt={'wave1'} />
-            <Image src={wave2} alt={'wave2'} />
-            <Image src={wave3} alt={'wave3'} />
+        <div className='absolute left-1/2 translate-x-[-50%] bottom-48 w-screen h-48 -z-10'>
+            <Image src={wave2} alt={'wave2'} className='absolute w-screen' />
+            <Image src={wave1} alt={'wave1'} className='absolute w-screen' />
+            <Image src={wave3} alt={'wave3'} className='absolute w-screen' />
         </div>
     )
 }

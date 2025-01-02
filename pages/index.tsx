@@ -1,4 +1,5 @@
 import Sections from "@/components/Sections";
+import Waves from "@/components/Waves";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
-            <main className="mx-auto grid max-w-4xl auto-rows-auto gap-2 sm:gap-3">
+            <main className="min-h-screen mx-auto grid max-w-4xl auto-rows-auto gap-2 sm:gap-3">
                 {/* Header section */}
 
                 <section className="animate-[fade-in-down_1s_forwards] rounded border-2 border-argentinianBlue border-opaciy-10 bg-white opacity-0 shadow-md shadow-airSuperiorityBlue backdrop-blur-lg md:mx-2 lg:px-2 lg:py-1 xl:px-3">
@@ -137,6 +138,11 @@ export default function Home() {
                             </li>
                         </ul>
                     </footer>
+                </section>
+
+                {/* Background waves */}
+                <section className="relative">
+                    <Waves />
                 </section>
             </main>
         </>
