@@ -1,23 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import coffeePosts from "../public/images/projects/coffeePosts.jpeg";
 import bookFace from "../public/images/projects/postFeed.png";
 import eventZeit from "../public/images/projects/events-top.png";
 import yummies from "../public/images/projects/homePage.png";
 
 function Projects() {
   const projects = [
-    // {
-    //     name: "Coffee Posts",
-    //     image: coffeePosts,
-    //     description:
-    //         "A learning project to not only learn Next for my frontend, but Nest for my backend as well.",
-    //     frontend: "Next",
-    //     backend: "Nest",
-    //     database: "PostgreSQL",
-    //     liveLink: "https://coffee-post.onrender.com/",
-    //     repoLink: "https://github.com/Patricus/coffee-posts",
-    // },
     {
       name: "EventZeit",
       image: eventZeit,

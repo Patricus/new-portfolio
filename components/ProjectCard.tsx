@@ -22,10 +22,10 @@ function ProjectCard({
     repoLink: string;
 }) {
     return (
-        <div className="relative flex flex-col gap-1 overflow-hidden rounded-lg border-2 border-eerieBlack bg-charcoal shadow-inner shadow-eerieBlack">
-            <div className="relative h-72">
+        <div className="relative flex flex-col p-1 gap-1 overflow-hidden rounded-lg border-2 border-eerieBlack bg-zinc-50 shadow-inner shadow-eerieBlack z-10">
+            <div className="relative h-72 z-0">
                 <Image
-                    className="mb-1 place-self-center"
+                    className="mb-1 place-self-center z-0"
                     src={image}
                     alt={name}
                     fill
@@ -36,6 +36,7 @@ function ProjectCard({
                 />
             </div>
             <div className="mx-1">
+                <hr />
                 <strong className="text-lg font-bold">{name.toUpperCase()}</strong>
                 <hr />
             </div>
@@ -49,24 +50,24 @@ function ProjectCard({
             <div className="mx-1 font-semibold">
                 <div className="w-fit">
                     <a
-                        className="flex gap-1 transition-all hover:gap-3 hover:text-emerald"
+                        className="flex gap-1 transition-all hover:gap-3 hover:text-xanthous"
                         href={liveLink}
                         target="_blank"
                         rel="noopener noreferrer">
                         <div className="relative h-6 w-6">
-                            <Image src={linkArrow} alt={`${name} repository`} fill />
+                            <Image src={linkArrow} alt={`${name}`} fill />
                         </div>
                         <span>LIVE SITE</span>
                     </a>
                 </div>
                 <div className="w-fit">
                     <a
-                        className="flex gap-1 transition-all hover:gap-3 hover:text-emerald"
+                        className="flex gap-1 transition-all hover:gap-3 hover:text-xanthous"
                         href={repoLink}
                         target="_blank"
                         rel="noopener noreferrer">
                         <div className="relative h-6 w-6">
-                            <Image src={linkArrow} alt={`${name} repository`} fill />
+                            <Image src={linkArrow} alt={`${name}`} fill />
                         </div>
                         <span>REPOSITORY</span>
                     </a>
